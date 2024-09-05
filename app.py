@@ -66,7 +66,7 @@ def process_video_sequential(model, label_encoder, video_path):
     
     return predictions
 
-def post_process_predictions(predictions, threshold=0.5, min_sequence_length=10):
+def post_process_predictions(predictions, threshold=0.6, min_sequence_length=10):
     processed_predictions = []
     current_sign = None
     start_frame = None
